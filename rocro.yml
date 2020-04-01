@@ -25,6 +25,7 @@ inspecode:
     thresholds: { num-issues: 999 }
 
   jshint:
+    config-file: inspecode-jshintrc   # (exp)
     thresholds: { num-issues: 999 }   # too many issues detected: 5459 > 1000
 
   misspell:
@@ -39,6 +40,14 @@ inspecode:
     thresholds: { num-issues: 999 }
 
   phpcs:
+    options:
+      --standard: PEAR
+      --exclude:
+      - Generic.Commenting.DocComment
+      - Generic.WhiteSpace.DisallowTabIndent
+      - PEAR.WhiteSpace.ScopeIndent
+      - PEAR.Functions.FunctionDeclaration
+      - PEAR.Functions.FunctionCallSignature
     auto-fix: true
     thresholds: { num-issues: 999 }   # the console log exceeds the maximum size
 
