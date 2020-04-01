@@ -2,27 +2,27 @@ inspecode:
 
   clang-format:
     auto-fix: true
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 339 }
 
   cpd:
     options: [ --skip-lexical-errors ]
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 59 }
 
   eslint:
     auto-fix: true
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 3 }
 
   flow:
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 0 }
 
   fossology:
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 105 }
 
   grep:
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 12 }
 
   jscpd:
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 291 }
 
   jshint:
     config-file: inspecode-jshintrc   # (exp)
@@ -30,14 +30,14 @@ inspecode:
 
   misspell:
     auto-fix: true
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 25 }
 
   #### -> codelift#1782
   #npm-audit:
   #  thresholds: { num-issues: 999 }
 
   npm-test:
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 2 }
 
   phpcs:
     options:
@@ -49,7 +49,7 @@ inspecode:
       - PEAR.Functions.FunctionDeclaration
       - PEAR.Functions.FunctionCallSignature
     auto-fix: true
-    thresholds: { num-issues: 999 }   # the console log exceeds the maximum size
+    thresholds: { num-issues: 541 }
 
   #### OutOfMemoryError
   #### -> codelift#1754
@@ -58,8 +58,8 @@ inspecode:
 
   prettier:
     auto-fix: true
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 390 }
 
   unused:
     options: [ --single-occurrence, --all-likelihoods ]
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 5 }
