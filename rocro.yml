@@ -25,8 +25,12 @@ inspecode:
     thresholds: { num-issues: 291 }
 
   jshint:
+    ignore:
+    - __tests__/
+    - flow-typed/
+    - scripts/
     config-file: inspecode-jshintrc   # (exp)
-    thresholds: { num-issues: 999 }   # too many issues detected: 5459 > 1000
+    thresholds: { num-issues: 999 }
 
   misspell:
     auto-fix: true
