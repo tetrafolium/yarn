@@ -2,50 +2,55 @@ inspecode:
 
   clang-format:
     auto-fix: true
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   cpd:
-    thresholds: { cpu: 999 }
+    options: [ --skip-lexical-errors ]
+    thresholds: { num-issues: 999 }
 
   eslint:
     auto-fix: true
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   flow:
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   fossology:
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   grep:
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   jscpd:
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   jshint:
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }   # too many issues detected: 5459 > 1000
 
   misspell:
     auto-fix: true
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
-  npm-audit:
-    thresholds: { cpu: 999 }
+  #### -> codelift#1782
+  #npm-audit:
+  #  thresholds: { num-issues: 999 }
 
   npm-test:
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   phpcs:
     auto-fix: true
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }   # the console log exceeds the maximum size
 
-  pmd:
-    thresholds: { cpu: 999 }
+  #### OutOfMemoryError
+  #### -> codelift#1754
+  #pmd:
+  #  thresholds: { num-issues: 999 }
 
   prettier:
     auto-fix: true
-    thresholds: { cpu: 999 }
+    thresholds: { num-issues: 999 }
 
   unused:
-    thresholds: { cpu: 999 }
+    options: [ --single-occurrence, --all-likelihoods ]
+    thresholds: { num-issues: 999 }
