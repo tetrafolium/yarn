@@ -9,10 +9,12 @@ inspecode:
     thresholds: { num-issues: 59 }
 
   eslint:
+    #config-file: .eslintrc.json  # (auto-detected)
     auto-fix: true
     thresholds: { num-issues: 3 }
 
   flow:
+    #config-file: .flowconfig     # (auto-detected)
     thresholds: { num-issues: 0 }
 
   fossology:
@@ -28,6 +30,7 @@ inspecode:
     ignore:
     - __tests__/
     - flow-typed/
+    - packages/
     - scripts/
     config-file: inspecode-jshintrc   # (exp)
     thresholds: { num-issues: 999 }

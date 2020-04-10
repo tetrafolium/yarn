@@ -5,6 +5,7 @@
     "expr"          : true,
     "lastsemic"     : true,
     "loopfunc"      : true,
+    "moz"           : true,
     "node"          : true,
     "sub"           : true,
     "validthis"     : true
