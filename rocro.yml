@@ -18,13 +18,13 @@ inspecode:
     thresholds: { num-issues: 0 }
 
   fossology:
-    thresholds: { num-issues: 105 }
+    thresholds: { num-issues: 108 }
 
   grep:
     thresholds: { num-issues: 12 }
 
   jscpd:
-    thresholds: { num-issues: 291 }
+    thresholds: { num-issues: 276 }
 
   jshint:
     ignore:
@@ -33,7 +33,7 @@ inspecode:
     - packages/
     - scripts/
     config-file: inspecode-jshintrc   # (exp)
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 999 }   # too many issues detected: 1026 > 1000
 
   misspell:
     auto-fix: true
@@ -65,7 +65,7 @@ inspecode:
 
   prettier:
     auto-fix: true
-    thresholds: { num-issues: 390 }
+    thresholds: { num-issues: 397 }
 
   unused:
     options: [ --single-occurrence, --all-likelihoods ]
